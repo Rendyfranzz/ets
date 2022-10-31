@@ -37,14 +37,14 @@
           <div class="max-w-md">
             <h1 class="mb-5 text-5xl font-bold">Selamat Datang di Settingin</h1>
             <p class="mb-5">Bengkel cepat mudah dan murah</p>
-            <button class="btn btn-primary">Pesan Sekarang</button>
+            <button class="btn btn-primary"><a href="/booking.html">Booking</a></button>
           </div>
         </div>
       </div>
     </section>
 
     <section id="service" class="h-screen p-2 flex space-y-14 flex-col md:flex-row md:space-y-0 md:space-x-4 items-center justify-center">
-      <div class="card w-96 h-96 bg-base-100 shadow-xl overflow-auto">
+      <div class="scale-75 md:scale-100 card w-96 h-96 bg-base-100 shadow-xl overflow-auto">
         <figure><img src="/assets/image/gambar1.jpg" alt="Shoes" /></figure>
         <div class="card-body">
           <h2 class="card-title">
@@ -78,16 +78,16 @@
       </div>
     </section>
 
-    <section id="about" class="h-screen flex justify-center items-center space-x-4">
+    <section id="about" class="h-screen flex flex-col md:flex-row justify-center items-center space-x-0 space-y-8 md:space-x-4 md:space-y-0">
       <div class="card w-96 h-56 bg-neutral text-neutral-content">
         <div class="card-body items-center text-center">
           <div class="h-12">
             <i class="fa-solid fa-house-user" style="font-size:40px ;"></i>
           </div>
           <h2 class="card-title">Alamat</h2>
-          <p>Street:Jl Mangga Besar I 207 C, Dki Jakarta
-            City:Dki Jakarta<br/>
-            State:Jakarta</p>
+          <p>Jl Mangga Besar I 207 C, Dki Jakarta<br/>
+            Jakarta<br/>
+            DKI Jakarta</p>
         </div>
       </div>
 
@@ -116,10 +116,9 @@
   <footer>
     <footer class="footer footer-center p-10 bg-base-200 text-base-content rounded">
       <div class="grid grid-flow-col gap-4">
-        <a class="link link-hover">Service</a> 
-        <a class="link link-hover">Pricelist</a> 
-        <a class="link link-hover">Jobs</a> 
-        <a class="link link-hover">Press kit</a>
+        <a href="#service" class="link link-hover">Service</a> 
+        <a href="#about" class="link link-hover">About</a> 
+        <a href="/booking.html" class="link link-hover">Booking</a> 
       </div> 
       <div>
         <div class="grid grid-flow-col gap-4">
@@ -129,7 +128,7 @@
         </div>
       </div> 
       <div>
-        <p>Copyright © 2022 - All right reserved by Montirin</p>
+        <p>Copyright © 2022 - All right reserved by Settingin</p>
       </div>
     </footer>
   </footer>

@@ -8,7 +8,6 @@
   <link rel="stylesheet" href="/assets/style.css">
   <link href="https://cdn.jsdelivr.net/npm/daisyui@2.36.1/dist/full.css" rel="stylesheet" type="text/css" />
   <script src="https://cdn.tailwindcss.com"></script>
-  <script src="/assets/main.js"></script>
   <title>Settingin</title>
 </head>
 
@@ -33,25 +32,26 @@
   </main>
     <section id="booking" class="h-screen flex justify-center items-center">
         <div class=" w-96 h-96">
-            <form class="flex flex-col p-2 text-white">
+            <form id="form" onsubmit="mySubmit()" class="flex flex-col p-2 text-white rounded-md space-y-2">
                 <label for="name">Nama</label>
-                <input id="name" type="text" class="bg-transparent text-black border-b-2 border-solid border-black focus:outline-0" />
+                <input id="name" type="text" class="bg-transparent text-black border-b-2 border-solid border-black focus:outline-0"  />
 
                 <label for="hp">No Hp</label>
-                <input id="hp" type="number" class="bg-transparent text-black border-b-2 border-solid border-black focus:outline-0" />
+                <input id="hp" type="number" class="bg-transparent text-black border-b-2 border-solid border-black focus:outline-0"  />
 
-                <label for="waktu">waktu</label>
+                <label for="waktu">Waktu</label>
                 <input id="waktu" type="datetime-local" class="bg-transparent text-black border-b-2 border-solid border-black focus:outline-0" />
                 <div class="flex flex-row space-x-4">
                   Datang Ke Rumah : 
-                <input type="radio" id="yes" name="lokasi" value="1">
+                <input type="radio" id="yes" name="lokasi" value="1" >
                 <label for="yes">Iya</label>
                 <input type="radio" id="no" name="lokasi" value="0">
                 <label for="no">Tidak</label>
                 </div>
                 
-
-                <input type="submit" value="Submit">
+                <label for="alamat">Alamat</label>
+                <input type="text" class="bg-transparent text-black border-b-2 border-solid border-black focus:outline-0">
+                <input type="submit" value="Submit" class="transition duration-500 cursor-pointer w-16 m-auto border-2 rounded-md hover:bg-sky-500">
             </form>
         </div>
     </section>
@@ -75,6 +75,7 @@
       </div>
     </footer>
   </footer>
+  <script src="/assets/main.js"></script>
 </body>
 
 </html>
