@@ -9,7 +9,8 @@
   <link rel="stylesheet" href="/assets/style.css">
   <link href="https://cdn.jsdelivr.net/npm/daisyui@2.36.1/dist/full.css" rel="stylesheet" type="text/css" />
   <script src="https://cdn.tailwindcss.com"></script>
-  <title>Document</title>
+  <link rel="shortcut icon" type="image/x-icon" href="/assets/image/logo.ico" />
+  <title>Settingin</title>
 </head>
 
 <body>
@@ -23,6 +24,7 @@
         <li><a href="#home">Home</a></li>
         </li>
         <li><a href="#service">Service</a></li>
+        <li><a href="#tips">Tips</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="/booking.html">Booking</a></li>
       </ul>
@@ -43,8 +45,15 @@
       </div>
     </section>
 
-    <section id="service" class="h-screen p-2 flex space-y-14 flex-col md:flex-row md:space-y-0 md:space-x-4 items-center justify-center">
-      <div class="scale-75 md:scale-100 card w-96 h-96 bg-base-100 shadow-xl overflow-auto">
+    <section id="service" class="min-h-screen w-full p-2 flex flex-col items-center justify-center">
+
+      <div class="">
+        <h2 class="card-title text-center text-4xl">Services</h2>
+      </div>
+
+      <div class="flex space-y-14 flex-col md:flex-row md:space-y-0 md:space-x-4 items-center justify-center reveal">
+
+      <div class="card w-96 h-96 bg-base-100 shadow-xl overflow-auto">
         <figure><img src="/assets/image/gambar1.jpg" alt="Shoes" /></figure>
         <div class="card-body">
           <h2 class="card-title">
@@ -73,12 +82,44 @@
             Bergaransi!
             <div class="badge badge-secondary">Pasti</div>
           </h2>
-          <p>Setelah datang kemari kendaraan anda masih bermasalah?kami perbaiki gratis tanpa biaya tambahan</p>
+          <p>S  etelah datang kemari kendaraan anda masih bermasalah?kami perbaiki gratis tanpa biaya tambahan</p>
         </div>
       </div>
+    </div>
+
     </section>
 
-    <section id="about" class="h-screen flex flex-col md:flex-row justify-center items-center space-x-0 space-y-8 md:space-x-4 md:space-y-0">
+    <section id="tips" class="min-h-screen p-2 flex flex-col justify-center items-center space-y-4">
+      <div class="">
+        <h2 class="card-title text-center text-4xl">Tips</h2>
+      </div>
+      <div class="flex md:flex-row flex-col items-center overflow-hidden md:space-x-8 space-y-4 md:space-y-0 reveal2">
+      <div class="card w-96 h-96 bg-base-100 shadow-xl">
+        <div class="card-body">
+          <h2 class="card-title">Nyalakan / Panaskan Mobil</h2>
+          <p>Memanaskan atau Menyalakan mobil jarang dipakai secara berkala memiliki banyak manfaat yang baik. Ketika mobil dinyalakan dan Anda membiarkan mobil tersebut menyala selama beberapa waktu, terjadi sirkulasi di dalam mesin mobil sehingga menjaga cairan-cairan menggumpal di dalam mesin. Selain itu, hal ini juga bertujuan agar alternator bekerja optimal dalam pengisian aki sehingga komponen kelistrikan tidak tekor.</p>
+        </div>
+      </div>
+      <div class="card w-96 h-96 bg-base-100 shadow-xl">
+        <div class="card-body">
+          <h2 class="card-title">Cabut Aki Untuk Menghindari Korosi</h2>
+          <p>Mencabut Aki pada mobil jarang dipakai selain menjaga komponen kelistrikan tetap normal, juga menghindari korosi pada aki tersebut. Agar tetap terawat, sebaiknya sambungannya dilepas dulu dan disambungkan kembali ketika Anda akan menggunakan mobil tersebut.</p>
+        </div>
+      </div>
+      <div class="card w-96 h-96 bg-base-100 shadow-xl">
+        <div class="card-body">
+          <h2 class="card-title">Tambahkan Carbon Eliminator Pada Tangki Bensin</h2>
+          <p>Carbon Eliminator berfungsi untuk mengurangi kandungan karbon yang terdapat pada tangki bensin. Karbon yang terbakar secara alami terbakar di dalam tangki bensin bisa mengganggu performa mobil nantinya karena cukup mempengaruhi komponen mobil yang lain.</p>
+        </div>
+      </div>
+    </div>
+    </section>
+
+    <section id="about" class="min-h-screen flex flex-col justify-center items-center space-y-4 mb-10">
+      <div class="">
+        <h2 class="card-title text-center text-4xl">About</h2>
+      </div>
+      <div class="flex flex-col md:flex-row flex-col justify-center items-center space-x-0 space-y-8 md:space-x-4 md:space-y-0 overflow-hidden" >
       <div class="card w-96 h-56 bg-neutral text-neutral-content">
         <div class="card-body items-center text-center">
           <div class="h-12">
@@ -110,6 +151,7 @@
           <p>082244915668</p>
         </div>
       </div>
+    </div>
     </section>
 
   </main>
@@ -132,6 +174,7 @@
       </div>
     </footer>
   </footer>
+  <script src="/assets/main.js"></script>
 </body>
 
 </html>
