@@ -16,7 +16,6 @@ window.addEventListener("scroll",function(){
     for(i=0;i<reveal2.length;i++){
 
         let revealTop2 = reveal2[i].getBoundingClientRect().top
-        console.log(revealTop2);
 
         if(revealTop2 < 350){
             reveal2[i].classList.add("nyala")
